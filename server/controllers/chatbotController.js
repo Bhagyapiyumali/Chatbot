@@ -14,4 +14,21 @@ export function handleChat(req, res) {
 
 
     const text = message.toLowerCase();
+
+    if (text.includes('places') || text.includes('visit') || text.includes('things to do')) {
+// try to find district
+        const places = readJson('places.json');
+        const district = detectDistrict(text, places);
+
+        if (district) {
+            const filtered = places.filter(p => p.district.toLowerCase() === district.toLowerCase());
+
+            if (filtered.length) {
+                const reply = formatPlacesReply(district, filtered);
+                return res.json({ reply, cards: filtered });
+            }else {
+                return res.json({ reply: `I couldn't find places for ${district}.` });
+             }
+        }
+    }
 }
