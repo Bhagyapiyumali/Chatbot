@@ -1,12 +1,17 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 
 const readJson = (filename) => {
-const p = path.join(process.cwd(), 'backend', 'data', filename);
-const raw = fs.readFileSync(p, 'utf8');
-return JSON.parse(raw);
+  const p = path.join(__dirname, '..', 'data', filename);
+  const raw = fs.readFileSync(p, 'utf8');
+  return JSON.parse(raw);
 };
+
 
 export function handleChat(req, res) {
     const { message } = req.body || {};
@@ -30,5 +35,29 @@ export function handleChat(req, res) {
                 return res.json({ reply: `I couldn't find places for ${district}.` });
              }
         }
+
+        // Detect district name from the user input
+function detectDistrict(message, places) {
+    const districts = [...new Set(places.map(p => p.district.toLowerCase()))];
+
+    for (const d of districts) {
+        if (message.includes(d)) {
+            return d;
+        }
+    }
+    return null; // no district found
+}
+
+// Format chatbot reply for places list
+function formatPlacesReply(district, places) {
+    let reply = `Here are some places to visit in ${district}:\n\n`;
+
+    places.forEach((p, i) => {
+        reply += `${i + 1}. ${p.name}\n`;
+    });
+
+    return reply;
+}
+
     }
 }
