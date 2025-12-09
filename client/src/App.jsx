@@ -27,7 +27,7 @@ export default function App() {
         <h1 className="hero-title">Discover Your Next Adventure</h1>
         <p className="hero-subtitle">
           Experience the world with our AI-powered travel assistant. 
-          
+          Ask me anything below.
         </p>
       </div>
 
