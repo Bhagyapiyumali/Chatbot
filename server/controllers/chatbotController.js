@@ -21,7 +21,7 @@ export function handleChat(req, res) {
     const text = message.toLowerCase();
 
     if (text.includes('places') || text.includes('visit') || text.includes('things to do')) {
-// try to find district
+        // try to find district
         const places = readJson('places.json');
         const district = detectDistrict(text, places);
 
@@ -37,27 +37,27 @@ export function handleChat(req, res) {
         }
 
         // Detect district name from the user input
-function detectDistrict(message, places) {
-    const districts = [...new Set(places.map(p => p.district.toLowerCase()))];
+        function detectDistrict(message, places) {
+            const districts = [...new Set(places.map(p => p.district.toLowerCase()))];
 
-    for (const d of districts) {
-        if (message.includes(d)) {
-            return d;
+            for (const d of districts) {
+                if (message.includes(d)) {
+                    return d;
+                }
+            }
+            return null; // no district found
         }
-    }
-    return null; // no district found
-}
 
-// Format chatbot reply for places list
-function formatPlacesReply(district, places) {
-    let reply = `Here are some places to visit in ${district}:\n\n`;
+        // Format chatbot reply for places list
+        function formatPlacesReply(district, places) {
+            let reply = `Here are some places to visit in ${district}:\n\n`;
 
-    places.forEach((p, i) => {
-        reply += `${i + 1}. ${p.name}\n`;
-    });
+            places.forEach((p, i) => {
+                reply += `${i + 1}. ${p.name}\n`;
+            });
 
-    return reply;
-}
+            return reply;
+        }
 
     }
 }
