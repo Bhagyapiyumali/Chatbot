@@ -26,7 +26,9 @@ export default function App() {
       <div className="content-wrapper">
         <div className="glass-card">
           <h1 className="title">Tourism Website (Demo)</h1>
-          <p className="subtitle">This page shows how the chatbot integrates. It’s a small demo.</p>
+          <p className="subtitle">This page shows how the chatbot integrates.example mini application. It’s a small demo.
+            with real time chat capabilities.
+          </p>
         </div>
       </div>
       
