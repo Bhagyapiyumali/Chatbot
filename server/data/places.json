@@ -2,5 +2,8 @@
 { "id": 1, "district": "Kandy", "name": "Temple of the Tooth", "description": "Historic temple in Kandy." },
 { "id": 2, "district": "Kandy", "name": "Peradeniya Botanical Gardens", "description": "Large botanical gardens." },
 { "id": 3, "district": "Galle", "name": "Galle Fort", "description": "UNESCO fort with colonial architecture." },
-{ "id": 4, "district": "Nuwara Eliya", "name": "Horton Plains", "description": "Highland national park with world’s end." }
+{ "id": 4, "district": "Nuwara Eliya", "name": "Horton Plains", "description": "Highland national park with world’s end." },
+{ "id": 5, "district": "Sigiriya", "name": "Sigiriya Rock Fortress", "description": "Ancient rock fortress and palace ruins." },
+{ "id": 6, "district": "Ella", "name": "Nine Arches Bridge", "description": "Iconic railway bridge in a scenic location." },
+{ "id": 7, "district": "Colombo", "name": "Galle Face Green", "description": "Urban park along the coast." }
 ]
