@@ -60,4 +60,31 @@ export function handleChat(req, res) {
         }
 
     }
+    else if (text.includes('hotel') || text.includes('stay') || text.includes('accommodation')) {
+        const hotels = readJson('hotels.json');
+        const district = detectDistrict(text, hotels);
+        if (district) {
+            const filtered = hotels.filter(h => h.district.toLowerCase() === district.toLowerCase());
+            if (filtered.length) {
+                const reply = formatHotelsReply(district, filtered);
+                return res.json({ reply, cards: filtered });
+            } else {
+                return res.json({ reply: `I couldn't find hotels for ${district}.` });
+            }
+        }
+
+        // Format chatbot reply for hotels list
+        function formatHotelsReply(district, hotels) {
+            let reply = `Here are some hotels in ${district}:\n\n`;
+
+            hotels.forEach((h, i) => {
+                reply += `${i + 1}. ${h.name} (${h.price}) - Phone: ${h.phone}\n`;
+            });
+
+            return reply;
+        }
+    }
+    else {
+        return res.json({ reply: "Sorry, I didn't understand that. You can ask about places to visit or hotels to stay." });
+    }   
 }
