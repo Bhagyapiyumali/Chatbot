@@ -9,5 +9,9 @@
 { "id": 8, "district": "Colombo", "name": "National Museum of Colombo", "description": "Largest museum in Sri Lanka." },
 { "id": 9, "district": "Galle", "name": "Unawatuna Beach", "description": "Popular beach destination." },
 { "id": 10, "district": "Ella", "name": "Ravana Falls", "description": "Famous waterfall near Ella." },
-{ "id": 11, "district": "Nuwara Eliya", "name": "Gregory Lake", "description": "Scenic lake in Nuwara Eliya." }
+{ "id": 11, "district": "Nuwara Eliya", "name": "Gregory Lake", "description": "Scenic lake in Nuwara Eliya." },
+{ "id": 12, "district": "Sigiriya", "name": "Pidurangala Rock", "description": "Rock formation with panoramic views." },
+{ "id": 13, "district": "Kandy", "name": "Udawattakele Forest Reserve", "description": "Historic forest reserve." },
+{ "id": 14, "district": "Colombo", "name": "Viharamahadevi Park", "description": "Largest park in Colombo." },
+{ "id": 15, "district": "Galle", "name": "Dutch Reformed Church", "description": "Historic church in Galle Fort." }
 ]
