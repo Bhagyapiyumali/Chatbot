@@ -10,5 +10,8 @@
 { "id": 9, "district": "Nuwara Eliya", "name": "Tea Country Hotel", "price": "$$", "phone": "+94 52 6543210" },
 {"id": 10, "district": "Colombo", "name": "Colombo Grand Hotel", "price": "$$$$", "phone": "+94 11 2222333"},
 { "id": 11, "district": "Sigiriya", "name": "Lion's Rock Hotel", "price": "$$", "phone": "+94 66 7777777" },
-{ "id": 12, "district": "Ella", "name": "Ella View Hotel", "price": "$$", "phone": "+94 57 8888888" }
+{ "id": 12, "district": "Ella", "name": "Ella View Hotel", "price": "$$", "phone": "+94 57 8888888" },
+{ "id": 13, "district": "Kandy", "name": "Lakeview Hotel", "price": "$$", "phone": "+94 81 3456789" },
+{ "id": 14, "district": "Galle", "name": "Sunset Beach Hotel", "price": "$$", "phone": "+94 91 9876543" },
+{ "id": 15, "district": "Nuwara Eliya", "name": "Clouds Rest Hotel", "price": "$$$", "phone": "+94 52 1112222" }
 ]
