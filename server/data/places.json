@@ -8,5 +8,6 @@
 { "id": 7, "district": "Colombo", "name": "Galle Face Green", "description": "Urban park along the coast." },
 { "id": 8, "district": "Colombo", "name": "National Museum of Colombo", "description": "Largest museum in Sri Lanka." },
 { "id": 9, "district": "Galle", "name": "Unawatuna Beach", "description": "Popular beach destination." },
-{ "id": 10, "district": "Ella", "name": "Ravana Falls", "description": "Famous waterfall near Ella." }
+{ "id": 10, "district": "Ella", "name": "Ravana Falls", "description": "Famous waterfall near Ella." },
+{ "id": 11, "district": "Nuwara Eliya", "name": "Gregory Lake", "description": "Scenic lake in Nuwara Eliya." }
 ]
