@@ -7,5 +7,6 @@
 { "id": 6, "district": "Colombo", "name": "Colombo City Hotel", "price": "$$$$", "phone": "+94 11 2222222" },
 { "id": 7, "district": "Kandy", "name": "Royal Kandy Hotel", "price": "$$$", "phone": "+94 81 8765432" },
 { "id": 8, "district": "Galle", "name": "Fortress Resort", "price": "$$$", "phone": "+94 91 1231234" },
-{ "id": 9, "district": "Nuwara Eliya", "name": "Tea Country Hotel", "price": "$$", "phone": "+94 52 6543210" }
+{ "id": 9, "district": "Nuwara Eliya", "name": "Tea Country Hotel", "price": "$$", "phone": "+94 52 6543210" },
+{"id": 10, "district": "Colombo", "name": "Colombo Grand Hotel", "price": "$$$$", "phone": "+94 11 2222333"}
 ]
